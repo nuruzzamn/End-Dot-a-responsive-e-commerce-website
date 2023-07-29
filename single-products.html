@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single products</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Montserrat&family=Poppins:ital,wght@0,400;0,500;0,600;1,400&family=Yatra+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="head-comtainer">
+      <nav class="topnav">
+        <div class="nav-left">
+          <a href="index.html"><img src="images/logo/1.png" /></a>
+        </div>
+
+        <div class="nav-right">
+          <ul class="left-menu" id="myLinks">
+            <li><a href="index.html" class="hover">Home</a></li>
+            <li><a href="all-products.html" class="hover">Products</a></li>
+            <li><a href="about.html" class="hover">About</a></li>
+            <li><a href="contact.html" class="hover">Contact</a></li>
+            <li><a href="account.html" class="hover">Account</a></li>
+          </ul>
+
+          <ul class="right-icon">
+            <li>
+              <a href="add-to-card.html"><img src="images/cart.png" class="cart-icon" /></a>
+            </li>
+
+            <li>
+              <a href="#" class="icon" id="icon" onclick="myFunction()">
+                <i class="fa fa-bars fa-2x"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <main>
+      <div class="feature-products">
+        <div class="row-sp">
+          <div class="single-products-col-1">
+            <img
+              src="images/gallery-1.jpg"
+              class="ProductImg"
+              id="ProductImg"
+            />
+
+            <div class="smallImg-row">
+              <div class="smallImg-col">
+                <img
+                  src="images/gallery-1.jpg"
+                  class="SmallImg"
+                  id="SmallImg1"
+                />
+              </div>
+
+              <div class="smallImg-col">
+                <img src="images/gallery-2.jpg" id="SmallImg2"/> 
+              </div>
+
+              <div class="smallImg-col">
+                <img src="images/gallery-3.jpg" id="SmallImg3"/>
+              </div>
+
+              <div class="smallImg-col">
+                <img src="images/gallery-4.jpg" id="SmallImg4"/>
+              </div>
+            </div>
+          </div>
+
+          <div class="single-products-col-2">
+            <p>Home / T-Shirt</p>
+            <h2>Red Printed T-Shirt By HM</h2>
+            <p><strong> $50 </strong></p>
+            <select name="" id="size">
+              <option value="">Select Size</option>
+              <option value="">XXL</option>
+              <option value="">XL</option>
+              <option value="">L</option>
+              <option value="">M</option>
+              <option value="">S</option>
+            </select>
+
+            <div class="card">
+              <input type="number" value="1" />
+              <a href="add-to-card.html"> 
+                <div class="btn">
+                  <button>Add To Card</button>
+                </div>
+              </a>
+            </div>
+
+            <h4>Product Details <i class="fa-solid fa-indent"></i></h4>
+            <p class="des-sp">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
+              minima. Iure at eos, voluptatibus ratione modi doloremque neque et
+              eius.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-products">
+          <div class="row sp-title">
+            <h2>Related Products</h2>
+            <p>View More  >></p>
+          </div>
+        </div>
+        
+
+        <div class="row">
+          <div class="col">
+            <img src="images/product-1.jpg" />
+            <h4>Red Printed T-Shirt</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star-half-stroke"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p><strong> $50 </strong></p>
+          </div>
+
+          <div class="col">
+            <img src="images/product-2.jpg" />
+            <h4>Stylish Shoes</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star-half-stroke"></i>
+            </div>
+            <p><strong> $55 </strong></p>
+          </div>
+
+          <div class="col">
+            <img src="images/product-3.jpg" />
+            <h4>Black Cargo Pant</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p><strong> $65 </strong></p>
+          </div>
+
+          <div class="col">
+            <img src="images/product-4.jpg" />
+            <h4>Royal Blue Printed Polo-Shirt</h4>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p><strong> $60 </strong></p>
+          </div>
+        </div>
+
+        <div class="page-btn">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span><i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </div>
+      <!-- end -->
+
+      <!-- Brand section   -->
+      <div class="brands">
+        <div class="brand-row">
+          <div class="brand-col">
+            <img src="images/logo-coca-cola.png" />
+          </div>
+
+          <div class="brand-col">
+            <img src="images/logo-godrej.png" />
+          </div>
+
+          <div class="brand-col">
+            <img src="images/logo-oppo.png" />
+          </div>
+
+          <div class="brand-col">
+            <img src="images/logo-paypal.png" />
+          </div>
+
+          <div class="brand-col">
+            <img src="images/logo-philips.png" />
+          </div>
+        </div>
+      </div>
+      <!-- end  -->
+    </main>
+
+    <footer>
+      <div class="row">
+        <div class="col-1">
+          <h3>Download Our App</h3>
+          <p>Download App for Android and ios mobile phone.</p>
+          <div class="app-logo">
+            <div class="left-img">
+              <img src="images/play-store.png" />
+            </div>
+            <div class="right-img">
+              <img src="images/app-store.png" />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <a href="index.html"><img src="images/logo/1.png" /></a>
+          <p>Our products benefits of Sports Accessible to the Money.</p>
+        </div>
+
+        <div class="col-3">
+          <h3>Useful Links</h3>
+          <div class="link">
+            <a href="#"> <p>Coupons</p></a>
+            <a href="#"> <p>Blog post</p></a>
+            <a href="#"> <p>Return Policy</p></a>
+            <a href="#"> <p>Join Affiliate</p></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>copyright @2023 Nuruzzaman</p>
+      </div>
+    </footer>
+
+    <!-- script  -->
+    <script>
+      var menuItem = document.getElementById("myLinks");
+      const mqLarge = window.matchMedia("(max-width: 800px)");
+      mqLarge.addEventListener("change", mqHandler);
+
+      menuItem.style.display = "";
+      function mqHandler(e) {
+        if (e.matches == true) {
+          console.log("in 800");
+          menuItem.style.display = "none";
+        }
+
+        if (e.matches == false) {
+          console.log("out 800");
+          menuItem.style.display = "";
+        }
+      }
+
+      function myFunction() {
+        console.log("click btn");
+
+        if (menuItem.style.display == "none") {
+          menuItem.style.display = "inline-block";
+        } else {
+          menuItem.style.display = "none";
+        }
+      }
+    </script>
+
+    <!-- for small iamge -->
+    <script>
+      var ProductImg = document.getElementById("ProductImg");
+      var SmallImg = document.getElementById("SmallImg1");
+      var SmallImg = document.getElementById("SmallImg2");
+      var SmallImg = document.getElementById("SmallImg3");
+      var SmallImg = document.getElementById("SmallImg4");
+
+      SmallImg1.onclick = function () {
+        ProductImg.src = SmallImg1.src;
+      };
+
+      SmallImg2.onclick = function () {
+        ProductImg.src = SmallImg2.src;
+      };
+
+      SmallImg3.onclick = function () {
+        ProductImg.src = SmallImg3.src;
+      };
+
+      SmallImg4.onclick = function () {
+        ProductImg.src = SmallImg4.src;
+      };
+    </script>
+  </body>
+</html>

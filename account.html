@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Registration</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Montserrat&family=Poppins:ital,wght@0,400;0,500;0,600;1,400&family=Yatra+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="head-comtainer">
+      <nav class="topnav">
+        <div class="nav-left">
+          <a href="index.html"><img src="images/logo/1.png" /></a>
+        </div>
+
+        <div class="nav-right">
+          <ul class="left-menu" id="myLinks">
+            <li><a href="index.html" class="hover">Home</a></li>
+            <li><a href="all-products.html" class="hover">Products</a></li>
+            <li><a href="about.html" class="hover">About</a></li>
+            <li><a href="contact.html" class="hover">Contact</a></li>
+            <li><a href="account.html" class="hover">Account</a></li>
+          </ul>
+
+          <ul class="right-icon">
+            <li>
+              <a href="add-to-card.html"><img src="images/cart.png" class="cart-icon" /></a>
+            </li>
+
+            <li>
+              <a href="#" class="icon" id="icon" onclick="myFunction()">
+                <i class="fa fa-bars fa-2x"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="head-main account">
+        
+        <div class="right-col acc-left">
+          <img src="images/image1.png" />
+        </div>
+
+        <div class="left-col right">
+          <div class="form-container">
+            <div class="form-btn">
+                <span onclick="login()">Login</span>
+                <span onclick="registration()">Registration</span>
+                <hr id="indicator">
+            </div>
+
+            <form id="loginForm">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <div class="btn">
+                    <button type="submit" id="btn">Login</button>
+                </div>
+                <a href="#">Forgot password</a>
+            </form>
+
+            <form id="regForm">
+                <input type="text" placeholder="Username" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <div class="btn">
+                    <button type="submit" id="btn">Registration</button>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <footer>
+      <div class="row">
+        <div class="col-1">
+          <h3>Download Our App</h3>
+          <p>Download App for Android and ios mobile phone.</p>
+          <div class="app-logo">
+            <div class="left-img">
+              <img src="images/play-store.png" />
+            </div>
+            <div class="right-img">
+              <img src="images/app-store.png" />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <a href="index.html"><img src="images/logo/1.png" /></a>
+          <p>Our products benefits of Sports Accessible to the Money.</p>
+        </div>
+
+        <div class="col-3">
+          <h3>Useful Links</h3>
+          <div class="link">
+            <a href="#"> <p>Coupons</p></a>
+            <a href="#"> <p>Blog post</p></a>
+            <a href="#"> <p>Return Policy</p></a>
+            <a href="#"> <p>Join Affiliate</p></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>copyright @2023 Nuruzzaman</p>
+      </div>
+    </footer>
+
+    <!-- script  -->
+    <script>
+      var menuItem = document.getElementById("myLinks");
+      const mqLarge = window.matchMedia("(max-width: 800px)");
+      mqLarge.addEventListener("change", mqHandler);
+
+      menuItem.style.display = "";
+      function mqHandler(e) {
+        if (e.matches == true) {
+          console.log("in 800");
+          menuItem.style.display = "none";
+        }
+
+        if (e.matches == false) {
+          console.log("out 800");
+          menuItem.style.display = "";
+        }
+      }
+
+      function myFunction() {
+        console.log("click btn");
+
+        if (menuItem.style.display == "none") {
+          menuItem.style.display = "inline-block";
+        } else {
+          menuItem.style.display = "none";
+        }
+      }
+    </script>
+
+    <!-- code for account form  -->
+    <script>
+        var loginForm = document.getElementById("loginForm");
+        var regForm = document.getElementById("regForm");
+        var indicator = document.getElementById("indicator");
+
+        function registration(){
+            regForm.style.transform = "translateX(0px)";
+            loginForm.style.transform = "translateX(0px)";
+            indicator.style.transform = "translateX(115px)";
+        }
+
+        function login(){
+            regForm.style.transform = "translateX(300px)";
+            loginForm.style.transform = "translateX(300px)";
+            indicator.style.transform = "translateX(0px)";
+        }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Montserrat&family=Poppins:ital,wght@0,400;0,500;0,600;1,400&family=Yatra+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="head-comtainer">
+      <nav class="topnav">
+        <div class="nav-left">
+          <a href="index.html"><img src="images/logo/1.png" /></a>
+        </div>
+
+        <div class="nav-right">
+          <ul class="left-menu" id="myLinks">
+            <li><a href="index.html" class="hover">Home</a></li>
+            <li><a href="all-products.html" class="hover">Products</a></li>
+            <li><a href="about.html" class="hover">About</a></li>
+            <li><a href="contact.html" class="hover">Contact</a></li>
+            <li><a href="account.html" class="hover">Account</a></li>
+          </ul>
+
+          <ul class="right-icon">
+            <li>
+              <a href="add-to-card.html"><img src="images/cart.png" class="cart-icon" /></a>
+            </li>
+
+            <li>
+              <a href="#" class="icon" id="icon" onclick="myFunction()">
+                <i class="fa fa-bars fa-2x"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="aboutus-header">
+        <h1>About Us</h1>
+    </div>
+    <div class="aboutus-main">
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p>Our mission is to provide you with a seamless and enjoyable shopping experience. We aim to offer a diverse selection of products that cater to your interests and lifestyle, while ensuring top-notch customer service and a user-friendly interface.</p>
+        </section>
+        <section class="quality">
+            <h2>Quality Products</h2>
+            <p>We understand the importance of quality, and that's why we carefully curate our product offerings. From trendy fashion apparel to innovative gadgets, home decor to fitness equipment, we handpick each item to meet our rigorous standards. We partner with trusted suppliers to deliver products that not only meet your expectations but exceed them.</p>
+        </section>
+        <section class="customer-service">
+            <h2>Customer Service</h2>
+            <p>Your satisfaction is our top priority. Our dedicated customer service team is always ready to assist you with any inquiries, concerns, or issues you may have. We strive to provide prompt and helpful responses, ensuring that you have a smooth and enjoyable shopping experience from start to finish.</p>
+        </section>
+        <section class="secure-shopping">
+            <h2>Secure Shopping</h2>
+            <p>We take the security of your personal and financial information seriously. Our eCommerce shop employs industry-standard security measures to protect your data. We utilize secure payment gateways, encrypted connections, and follow best practices to ensure that your transactions are safe and secure.</p>
+        </section>
+        <section class="shipping">
+            <h2>Fast and Reliable Shipping</h2>
+            <p>We understand the excitement of receiving your orders promptly. That's why we partner with trusted shipping carriers to ensure fast and reliable delivery to your doorstep. We provide tracking information for all shipments so you can stay informed about your order's progress.</p>
+        </section>
+        <section class="community">
+            <h2>Community Engagement</h2>
+            <p>We value our customers and aim to build a strong community around our eCommerce shop. We actively engage with our customers through social media, newsletters, and blogs to keep you updated on the latest trends, product launches, and exclusive offers. We encourage you to connect with us and be part of our vibrant community.</p>
+        </section>
+
+        <div class="aboutus-footer">
+            <p>Thank you for choosing End-Dot. We appreciate your trust and look forward to serving you with a delightful shopping experience. If you have any further questions or need assistance, please don't hesitate to reach out to our customer service team.</p>
+        </div>
+        <div class="end">
+          <p>Happy shopping!</p>
+          <strong><p>End-Dot Team</p></strong>
+        </div>
+    </div>
+    
+
+    <footer>
+      <div class="row">
+        <div class="col-1">
+          <h3>Download Our App</h3>
+          <p>Download App for Android and ios mobile phone.</p>
+          <div class="app-logo">
+            <div class="left-img">
+              <img src="images/play-store.png" />
+            </div>
+            <div class="right-img">
+              <img src="images/app-store.png" />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <a href="index.html"><img src="images/logo/1.png" /></a>
+          <p>Our products benefits of Sports Accessible to the Money.</p>
+        </div>
+
+        <div class="col-3">
+          <h3>Useful Links</h3>
+          <div class="link">
+            <a href="#"> <p>Coupons</p></a>
+            <a href="#"> <p>Blog post</p></a>
+            <a href="#"> <p>Return Policy</p></a>
+            <a href="#"> <p>Join Affiliate</p></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>copyright @2023 Nuruzzaman</p>
+      </div>
+    </footer>
+
+    <!-- script  -->
+    <script>
+      var menuItem = document.getElementById("myLinks");
+      const mqLarge = window.matchMedia("(max-width: 800px)");
+      mqLarge.addEventListener("change", mqHandler);
+
+      menuItem.style.display = "";
+      function mqHandler(e) {
+        if (e.matches == true) {
+          console.log("in 800");
+          menuItem.style.display = "none";
+        }
+
+        if (e.matches == false) {
+          console.log("out 800");
+          menuItem.style.display = "";
+        }
+      }
+
+      function myFunction() {
+        console.log("click btn");
+
+        if (menuItem.style.display == "none") {
+          menuItem.style.display = "inline-block";
+        } else {
+          menuItem.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
